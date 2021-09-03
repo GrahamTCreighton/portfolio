@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graham's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6209a14475.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <!-- NAVBAR STARTS HERE -->
+    <div id="sidebar">
+      <img src="images/myface.png" id="myface" />
+      <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
+      <a href="#cvresume"
+        ><i class="fas fa-envelope-open-text"></i> CV and Resume</a
+      >
+      <a href="#contact"><i class="fas fa-phone-alt"></i> Contact</a>
+      <!-- DARKMODE BUTTON-->
+      <button type="button" id="dmbutton" onclick="darkMode()">
+        Dark Mode
+      </button>
+    </div>
+    <!-- SOCIALS SECTION-->
+    <div id="socials">
+      <p>Social Networks</p>
+      <a href="https://bit.ly/3BqnxjZ" target="_blank"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <a href="https://bit.ly/3yisCsy" target="_blank"
+        ><i class="fab fa-github-square"></i
+      ></a>
+      <a href="https://bit.ly/3Bf8eds" target="_blank"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </div>
+    <!-- NAVBAR ENDS // MAIN PAGE DISPLAY STARTS -->
+    <div id="intro">
+      <p>
+        Hi, I'm <span id="name">Graham Creighton</span>.<br />
+        <span id="front">Front-end developer</span> and
+        <span id="ui">UI designer</span>.
+      </p>
+    </div>
+    <img src="images/signature.png" id="signature" />
+    <!--JS initialization-->
+    <script type="text/javascript" src="init.js"></script>
+  </body>
+</html>

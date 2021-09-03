@@ -1,0 +1,195 @@
+/*NAVBAR STARTS HERE*/
+body {
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#myface {
+  max-width: 180px;
+  margin-left: 6em;
+  margin-top: 4em;
+  transition: ease-in-out 1s;
+  z-index: 1;
+}
+#myface:hover {
+  transform: 1s ease-in-out;
+  transform: scale(1.25);
+}
+#sidebar {
+  height: 100%;
+  width: 400px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(102, 157, 178, 0.493);
+  overflow-x: hidden;
+  padding-top: 1em;
+  border-right: solid black 1px;
+  transition: ease-in-out 1s;
+}
+
+#sidebar a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding: 0.25em;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  display: block;
+  margin-left: 1.9em;
+  margin-top: 2em;
+  transition: 1s ease-in-out;
+}
+
+#sidebar a:hover {
+  color: #f1f1f1;
+  transform: scale(1.5) translatex(14%);
+}
+
+#socials {
+  position: fixed;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-top: 27em;
+  margin-left: 1.55em;
+  font-size: 1.4em;
+  transition: 1s;
+  z-index: 1;
+}
+#socials a {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  padding-right: 0em;
+  font-size: 24px !important;
+  color: #000000;
+  transition: all 1s ease-in-out;
+  padding-right: 1em;
+}
+#socials a:hover {
+  color: #f1f1f1;
+  transform: scale(1.5) translateX(10%);
+}
+#dmbutton {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  border-radius: 0.2em;
+  transition: 1s;
+  margin-left: 2.5em;
+  margin-top: 18em;
+  padding: 0.5em;
+}
+
+#dmbutton:hover {
+  color: #f1f1f1;
+  transform: scale(1.25);
+  border: 1px solid white;
+  background-color: black;
+}
+
+/*Navbar ends here*/
+
+#intro {
+  position: fixed;
+  font-family: "Roboto Slab", serif;
+  font-size: 4em;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 10em;
+  padding-top: 6em;
+  transition: ease-in-out 1s;
+}
+
+#signature {
+  position: fixed;
+  max-width: 25em;
+  margin-left: 60em;
+  margin-top: 42.5em;
+  transition: ease-in-out 1s;
+}
+
+#name {
+  display: inline-block;
+  font-weight: 500;
+  transition: ease-in-out 1s;
+}
+#name:hover {
+  color: rgb(102, 156, 178);
+  animation: bounce 1s linear;
+}
+#front {
+  display: inline-block;
+  font-weight: 500;
+  transition: ease-in-out 1s;
+}
+#front:hover {
+  color: rgb(102, 156, 178);
+  animation: bounce 1s linear;
+}
+#ui {
+  display: inline-block;
+  font-weight: 500;
+  transition: ease-in-out 1s;
+}
+#ui:hover {
+  color: rgb(102, 156, 178);
+  animation: bounce 1s linear;
+}
+
+/*Bounce animation starts here*/
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  70% {
+    transform: translateY(-15px);
+  }
+
+  90% {
+    transform: translateY(-4px);
+  }
+}
+/*Bounce animation ends here*/
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  #sidebar {
+    padding-top: 15px;
+  }
+  #sidebar a {
+    font-size: 18px;
+  }
+  body {
+    width: 100%;
+  }
+}
+/*Dark mode starts here*/
+.dark-mode {
+  background-image: url(images/darkbg.jpg);
+  color: white;
+}
+
+.dark-mode #sidebar a {
+  color: white;
+}
+
+.dark-mode #sidebar #dmbutton {
+  color: white;
+}
+
+.dark-mode #socials a {
+  color: white;
+}
