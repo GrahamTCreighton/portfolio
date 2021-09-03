@@ -15,3 +15,5 @@ function changeSignatureAndStorage() {
     localStorage.setItem("dark-mode", "false");
   }
 }
+
+function hideAndShow() {} // working on hiding and showing function
