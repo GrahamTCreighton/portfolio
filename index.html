@@ -31,7 +31,7 @@
       >
       <a href="#contact"><i class="fas fa-phone-alt"></i> Contact</a>
       <!-- DARKMODE BUTTON-->
-      <button type="button" id="dmbutton" onclick="darkMode()">
+      <button type="button" id="dmbutton" onclick="toggleDarkMode()">
         Dark Mode
       </button>
     </div>
@@ -49,15 +49,20 @@
       ></a>
     </div>
     <!-- NAVBAR ENDS // MAIN PAGE DISPLAY STARTS -->
+    <!-- ABOUT ME PAGE -->
     <div id="intro">
       <p>
         Hi, I'm <span id="name">Graham Creighton</span>.<br />
         <span id="front">Front-end developer</span> and
         <span id="ui">UI designer</span>.
       </p>
+      <img src="images/signature.png" id="signature" />
     </div>
-    <img src="images/signature.png" id="signature" />
-    <!--JS initialization-->
+    <!-- PROJECTS PAGE -->
+    <div id="projects"></div>
+    <!-- CONTACT FORM -->
+    <div id="contact"></div>
+    <!--JS INIT-->
     <script type="text/javascript" src="init.js"></script>
   </body>
 </html>

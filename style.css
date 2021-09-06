@@ -11,10 +11,7 @@ body {
   margin-top: 4em;
   transition: ease-in-out 1s;
   z-index: 1;
-}
-#myface:hover {
-  transform: 1s ease-in-out;
-  transform: scale(1.25);
+  pointer-events: none;
 }
 #sidebar {
   height: 100%;
@@ -108,9 +105,10 @@ body {
 #signature {
   position: fixed;
   max-width: 25em;
-  margin-left: 60em;
-  margin-top: 42.5em;
+  left: 13em;
+  margin-top: 0em;
   transition: ease-in-out 1s;
+  pointer-events: none;
 }
 
 #name {
