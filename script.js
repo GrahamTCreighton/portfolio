@@ -1,6 +1,6 @@
 function toggleDarkMode() {
-  let element = document.body;
-  let myImage = document.getElementById("signature");
+  const element = document.body;
+  const myImage = document.getElementById("signature");
   const isDarkMode = localStorage.getItem("dark-mode");
   if (isDarkMode == "true") {
     element.classList.remove("dark-mode");
