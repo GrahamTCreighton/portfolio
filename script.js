@@ -13,7 +13,25 @@ function toggleDarkMode() {
   }
 }
 
-function hideAndShow() {}
+function hide() {
+  const mainPage = document.getElementsByClassName("content");
+  for (let i = 0; i < mainPage.length; i++) {
+    mainPage[i].style.display = "none";
+  }
+}
+function hideShowProjects() {
+  hide();
+  const showProject = document.getElementById("projects");
+  showProject.style.display = "block";
+  console.log("is working");
+}
+
+function hideShowContact() {
+  hide();
+  const showContact = document.getElementById("contact");
+  showContact.style.display = "block";
+  console.log("is working");
+}
 
 //use local storage to know what page to load.
 //when clicking on links setting the value on localstorage and reload.

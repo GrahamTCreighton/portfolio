@@ -25,11 +25,15 @@
     <div id="sidebar">
       <img src="images/myface.png" id="myface" />
       <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-      <a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
+      <a href="#projects" onclick="hideShowProjects()"
+        ><i class="fas fa-laptop-code"></i> Projects</a
+      >
       <a href="images/trialCV.pdf" target="_blank"
         ><i class="fas fa-envelope-open-text"></i> CV and Resume</a
       >
-      <a href="#contact"><i class="fas fa-phone-alt"></i> Contact</a>
+      <a href="#contact" onclick="hideShowContact()"
+        ><i class="fas fa-phone-alt"></i> Contact</a
+      >
       <!-- DARKMODE BUTTON-->
       <button type="button" id="dmbutton" onclick="toggleDarkMode()">
         Dark Mode
@@ -50,7 +54,7 @@
     </div>
     <!-- NAVBAR ENDS // MAIN PAGE DISPLAY STARTS -->
     <!-- ABOUT ME PAGE -->
-    <div id="intro">
+    <div id="intro" class="content">
       <p>
         Hi, I'm <span id="name">Graham Creighton</span>.<br />
         <span id="front">Front-end developer</span> and
@@ -59,9 +63,9 @@
       <img src="images/signature.png" id="signature" />
     </div>
     <!-- PROJECTS PAGE -->
-    <div id="projects"></div>
+    <div id="projects" class="content"></div>
     <!-- CONTACT FORM -->
-    <div id="contact"></div>
+    <div id="contact" class="content"></div>
     <!--JS INIT-->
     <script type="text/javascript" src="init.js"></script>
   </body>
