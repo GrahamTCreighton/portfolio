@@ -91,6 +91,7 @@ body {
 
 /*Navbar ends here*/
 
+/*Homepage starts here*/
 #home {
   position: fixed;
   font-family: "Roboto Slab", serif;
@@ -138,7 +139,18 @@ body {
   color: rgb(102, 156, 178);
   animation: bounce 1s linear;
 }
+/*Homepage ends Here*/
 
+/*Project page starts Here*/
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4em;
+  justify-content: space-between;
+}
+#projects img {
+  border: solid black 1px;
+}
 /*Bounce animation starts here*/
 @keyframes bounce {
   20%,
