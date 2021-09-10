@@ -19,18 +19,13 @@ function hide() {
     mainPage[i].style.display = "none";
   }
 }
-function hideShowProjects() {
-  hide();
-  const showProject = document.getElementById("projects");
+function show(elementID) {
+  const showProject = document.getElementById(elementID);
   showProject.style.display = "block";
-  console.log("is working");
 }
-
-function hideShowContact() {
+function hideAndShow(elementID) {
   hide();
-  const showContact = document.getElementById("contact");
-  showContact.style.display = "block";
-  console.log("is working");
+  show(elementID);
 }
 
 //use local storage to know what page to load.
