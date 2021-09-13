@@ -32,3 +32,8 @@ function hideAndShow(elementID) {
   hide();
   show(elementID);
 }
+
+function goToSite(link) {
+  target = "_blank";
+  location.href = link;
+}
