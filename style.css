@@ -143,13 +143,80 @@ body {
 
 /*Project page starts Here*/
 #projects {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 4em;
-  justify-content: space-between;
+  position: absolute;
+  width: 1200px;
+  height: 900px;
+  margin: 0px;
+  left: 27.5em;
 }
-#projects img {
+.container {
+  position: absolute;
+  width: 352px;
+  margin: 0px;
+  top: 10em;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 350px;
+  height: auto;
   border: solid black 1px;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn1 {
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(102, 156, 178, 0.883);
+  color: black;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  transition: ease-in-out 1s;
+  border: solid white 1px;
+}
+.container .btn2 {
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(102, 156, 178, 0.883);
+  color: black;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  transition: ease-in-out 1s;
+  border: solid white 1px;
+}
+
+.container .btn1:hover {
+  background-color: black;
+  color: #f1f1f1;
+  border: 1px solid white;
+  background-color: rgb(102, 156, 178);
+  transform: scale(1.2) translatex(-40%) translateY(-40%);
+}
+.container .btn2:hover {
+  background-color: black;
+  color: #f1f1f1;
+  border: 1px solid white;
+  background-color: rgb(102, 156, 178);
+  transform: scale(1.2) translatex(-40%) translateY(-40%);
+}
+.projectinfo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.4em;
 }
 /*Bounce animation starts here*/
 @keyframes bounce {
