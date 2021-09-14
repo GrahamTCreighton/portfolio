@@ -151,22 +151,24 @@ body {
 }
 .container {
   position: absolute;
-  width: 352px;
+  width: 350px;
+  height: 435px;
   margin: 0px;
-  top: 10em;
+  top: 4em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Make the image responsive */
 .container img {
   width: 350px;
   height: auto;
-  border: solid black 1px;
+  border-bottom: solid black 1px;
 }
 
 /* Style the button and place it in the middle of the container/image */
 .container .btn1 {
   position: absolute;
-  top: 70%;
+  top: 92%;
   left: 25%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -179,11 +181,12 @@ body {
   font-weight: 500;
   font-size: 1em;
   transition: ease-in-out 1s;
-  border: solid white 1px;
+  border: solid black 1px;
+  text-decoration: none;
 }
 .container .btn2 {
   position: absolute;
-  top: 70%;
+  top: 92%;
   left: 75%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -196,7 +199,8 @@ body {
   font-weight: 500;
   font-size: 1em;
   transition: ease-in-out 1s;
-  border: solid white 1px;
+  border: solid black 1px;
+  text-decoration: none;
 }
 
 .container .btn1:hover {
@@ -217,6 +221,13 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.4em;
+  padding-left: 14px;
+  padding-top: 10px;
+}
+.projectinfo p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 /*Bounce animation starts here*/
 @keyframes bounce {
@@ -268,4 +279,20 @@ body {
 
 .dark-mode #socials a {
   color: white;
+}
+
+.dark-mode .container {
+  background-color: rgba(102, 157, 178, 0.493);
+}
+
+.dark-mode .container .btn1 {
+  color: white;
+  border: white solid 1px;
+  background-color: rgb(102, 156, 178);
+}
+
+.dark-mode .container .btn2 {
+  color: white;
+  border: white solid 1px;
+  background-color: rgb(102, 156, 178);
 }
