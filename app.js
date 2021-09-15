@@ -15,7 +15,7 @@ class App {
     let image = document.createElement("img");
     let imgAtt = document.createAttribute("src");
     imgAtt.value =
-      projectCard; /*<---stuck, need ideas to access image in different situations*/
+      projectCard[1].image; /*<---stuck, need ideas to access image in different situations*/
     document.getElementsByClassName("container").appendChild(image);
   }
   createLinkButton() {

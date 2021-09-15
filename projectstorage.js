@@ -14,6 +14,13 @@ let projectCard = {
     linkButton: "http:www.google.com",
     codeButton: "https://github.com/GrahamTCreighton/portfolio.git",
   },
+  2: {
+    image: "images/projectsample.png",
+    title: "Portfolio",
+    info: "Information about the project goes here",
+    linkButton: "http:www.google.com",
+    codeButton: "https://github.com/GrahamTCreighton/portfolio.git",
+  },
 };
 
 export default {
