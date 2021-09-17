@@ -1,45 +1,53 @@
-import setAttributes from "script.js";
+import setAttributes from "api.js";
 import projectCard from "./projectstorage";
 
 class App {
   constructor() {
-    this.render;
+    this.render();
   }
 
   createCard() {
-    let card = document.createElement("div");
-    setAttributes(card, {class:"container"})
-    document.getElementById("projects").appendChild(card);
+    let projectCardElement = document.createElement("div");
+    setAttributes(projectCardElement, {class:"container"})
+    document.getElementById("projects").appendChild(projectCardElement);
+    this.createImage(projectCardElement)
+    this.createLinkButton(projectCardElement)
+    this.createCodeButton(projectCardElement)
+    this.createTitle(projectCardElement)
+    this.createInfo(projectCardElement)
   }
-  createImage() {
+  createImage(parentElement) {
     let image = document.createElement("img");
-    let imgAtt = document.createAttribute("src");
-    imgAtt.value =
-      projectCard[1].image; /*<---stuck, need ideas to access image in different situations*/
-    document.getElementsByClassName("container").appendChild(image);
+    setAttributes(image,{src: ""}) /* Need to make loop to go over all the images in projectcard storage */
+    parentElement.appendChild(image);
   }
-  createLinkButton() {
+  createLinkButton(parentElement) {
     let linkButton = document.createElement("a");
     setAttributes(linkButton, { class: "btn1", href: /*stuck need ideas to access link */, target: "_blank" });
     linkButton.innerHTML = "Link";
-    document.getElementsByClassName("container").appendChild(linkButton);
+    parentElement.appendChild(linkButton);
   }
-  createCodeButton(){
+  createCodeButton(parentElement){
     let codeButton = document.createElement("a");
     setAttributes(codeButton, { class: "btn2", href: /*need ideas how to access link*/,target: "_blank"  });
     linkButton.innerHTML = "Code";
-    document.getElementsByClassName("container").appendChild(codeButton);
+    parentElement.appendChild(codeButton);
   }
-  createTitle(){
+  createTitle(parentElement){
     let createTitle = document.createElement("div");
     setAttributes(createTitle, {class: "projectTitle"});
     createTitle.innerHTML = /*Need to access the Title  in object*/;
-    document.getElementsByClassName("container").appendChild(createTitle);
+    parentElement.appendChild(createTitle);
   }
-  createInfo(){
+  createInfo(card){
     let createInfo = document.createElement("p");
     createInfo.innerHTML = /*Need to access the info in object */;
-    document.getElementsByClassName("projectTitle").appendChild(createInfo);
+    parentElement.appendChild(createInfo);
   }
+
+  render() {
+    document.getElementById("projects")
   }
 }
+let ourApp = new App();
+ourApp.render();

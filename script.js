@@ -32,12 +32,3 @@ function hideAndShow(elementID) {
   hide();
   show(elementID);
 }
-
-function setAttributes(el, attrs) {
-  //handy function for adding various attributes to the DOM
-  for (let key in attrs) {
-    el.setAttribute(key, attrs[key]);
-  }
-}
-
-export { setAttributes, hideAndShow };
