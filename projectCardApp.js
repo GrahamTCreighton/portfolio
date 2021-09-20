@@ -1,4 +1,4 @@
-let projectCard = [
+let projectCards = [
   {
     image: "images/projectsample.png",
     title: "Portfolio",
@@ -23,29 +23,23 @@ function setAttributes(el, attrs) {
 
 class App {
   constructor() {
-    this.render();
+    this.render(); // RENDER FUNCTION NEEDS WORK
   }
   createAllProjects() {
-    for (i = 0; i < projectCard.length; i++) {
-      createCard(
-        projectCard[i].image,
-        projectCard[i].linkButton,
-        projectCard[i].codeButton,
-        projectCard[i].title,
-        projectCard[i].info
-      );
+    for (i = 0; i < projectCards.length; i++) {
+      createCard(projectCards[i]);
     }
   }
 
-  createCard(imageAddress, linkAddress, codeAddress, title, info) {
+  createCard(projectCard) {
     let projectCardElement = document.createElement("div");
     setAttributes(projectCardElement, { class: "container" });
     document.getElementById("projects").appendChild(projectCardElement);
-    this.createImage(projectCardElement, imageAddress);
-    this.createLinkButton(projectCardElement, linkAddress);
-    this.createCodeButton(projectCardElement, codeAddress);
-    this.createTitle(projectCardElement, title);
-    this.createInfo(projectCardElement, info);
+    this.createImage(projectCardElement, projectCard.image);
+    this.createLinkButton(projectCardElement, projectCard.linkButton);
+    this.createCodeButton(projectCardElement, projectCard.codeButton);
+    this.createTitle(projectCardElement, projectCard.title);
+    this.createInfo(projectCardElement, projectCard.info);
   }
   createImage(parentElement, imageAddress) {
     let image = document.createElement("img");
@@ -86,6 +80,7 @@ class App {
 
   render() {
     document.getElementById("projects");
+    // RENDER FUNCTION NEEDS WORK
   }
 }
 let ourApp = new App();
