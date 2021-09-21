@@ -22,9 +22,7 @@ function setAttributes(el, attrs) {
 }
 
 class App {
-  constructor() {
-    this.render(); // RENDER FUNCTION NEEDS WORK
-  }
+  constructor() {}
   createAllProjects() {
     for (i = 0; i < projectCards.length; i++) {
       createCard(projectCards[i]);
@@ -77,11 +75,4 @@ class App {
     createInfo.innerHTML = info;
     parentElement.appendChild(createInfo);
   }
-
-  render() {
-    document.getElementById("projects");
-    // RENDER FUNCTION NEEDS WORK
-  }
 }
-let ourApp = new App();
-ourApp.render();
