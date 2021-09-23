@@ -79,7 +79,7 @@ body {
   transition: 1s;
   margin-left: 2.5em;
   margin-top: 18em;
-  padding: 0.5em;
+  padding: 0.75em;
 }
 
 #dmbutton:hover {
@@ -229,6 +229,135 @@ body {
   font-weight: 400;
   font-size: 18px;
 }
+
+/*Form starts here*/
+
+#contact {
+  position: absolute;
+  width: 1200px;
+  height: 900px;
+  margin: 0px;
+  left: 27.5em;
+}
+#formcontainer {
+  position: absolute;
+  left: 18em;
+  top: 10em;
+  height: 600px;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 800px;
+  max-width: 100%;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+}
+
+.header h2 {
+  margin: 0;
+}
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  position: absolute;
+  left: 17.2em;
+  top: 25em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background-color: rgb(102, 156, 178);
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100px;
+  transition: 1s ease-in-out;
+}
+.form button:hover {
+  color: #f1f1f1;
+  transform: scale(1.25);
+  background-color: #2ecc71;
+}
+
 /*Bounce animation starts here*/
 @keyframes bounce {
   20%,
