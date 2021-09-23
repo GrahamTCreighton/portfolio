@@ -32,3 +32,8 @@ function hideAndShow(elementID) {
   hide();
   show(elementID);
 }
+
+export default {
+  hideAndShow,
+  toggleDarkMode
+}

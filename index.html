@@ -18,28 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script type="text/javascript" src="script.js"></script>
+    <script type="module" src="init.js"></script>
   </head>
   <body>
     <!-- NAVBAR STARTS HERE -->
     <div id="sidebar">
       <img src="images/myface.png" id="myface" />
-      <a href="#home" onclick="hideAndShow('home')"
-        ><i class="fa fa-fw fa-home"></i> Home</a
-      >
-      <a href="#projects" onclick="hideAndShow('projects')"
-        ><i class="fas fa-laptop-code"></i> Projects</a
-      >
-      <a href="images/trialCV.pdf" target="_blank"
-        ><i class="fas fa-envelope-open-text"></i> CV and Resume</a
-      >
-      <a href="#contact" onclick="hideAndShow('contact')"
-        ><i class="fas fa-phone-alt"></i> Contact</a
-      >
-      <!-- DARKMODE BUTTON-->
-      <button type="button" id="dmbutton" onclick="toggleDarkMode()">
-        Dark Mode
-      </button>
     </div>
     <!-- SOCIALS SECTION-->
     <div id="socials">
@@ -67,13 +51,6 @@
     <!-- PROJECTS PAGE -->
     <div id="projects" class="content"></div>
     <!-- CONTACT FORM -->
-    <div id="contact" class="content"></div>
-    <!--JS INIT-->
-    <script type="text/javascript" src="init.js"></script>
-    <script
-      type="text/javascript"
-      src="projectCardApp.js"
-      type="module"
-    ></script>
+    <div id="contact" class="content"></div>    
   </body>
 </html>
