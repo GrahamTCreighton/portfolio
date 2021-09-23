@@ -1,5 +1,6 @@
 let projectCards = [
   {
+    id: 'project1',
     image: "images/projectsample.png",
     title: "Portfolio",
     info: "Information about the project goes here",
@@ -7,8 +8,9 @@ let projectCards = [
     codeButton: "https://github.com/GrahamTCreighton/portfolio.git",
   },
   {
+    id: 'project2',
     image: "images/projectsample.png",
-    title: "Portfolio",
+    title: "Portfolio 2",
     info: "Information about the project goes here",
     linkButton: "http:www.google.com",
     codeButton: "https://github.com/GrahamTCreighton/portfolio.git",
@@ -21,23 +23,23 @@ function setAttributes(el, attrs) {
   }
 }
 
-class App {
-  constructor() {}
-  createAllProjects() {
-    for (i = 0; i < projectCards.length; i++) {
-      createCard(projectCards[i]);
-    }
+export default class Projects {
+  constructor() {
+    projectCards.forEach(project => this.createCard(project))
   }
 
   createCard(projectCard) {
+    console.log(projectCard)
     let projectCardElement = document.createElement("div");
-    setAttributes(projectCardElement, { class: "container" });
+    setAttributes(projectCardElement, { class: "container", id: projectCard.id });
     document.getElementById("projects").appendChild(projectCardElement);
     this.createImage(projectCardElement, projectCard.image);
     this.createLinkButton(projectCardElement, projectCard.linkButton);
     this.createCodeButton(projectCardElement, projectCard.codeButton);
     this.createTitle(projectCardElement, projectCard.title);
     this.createInfo(projectCardElement, projectCard.info);
+    const projectsContainer = window.document.getElementById('projects')
+    projectsContainer.appendChild(projectCardElement)
   }
   createImage(parentElement, imageAddress) {
     let image = document.createElement("img");
@@ -61,7 +63,7 @@ class App {
       href: codeAddress,
       target: "_blank",
     });
-    linkButton.innerHTML = "Code";
+    codeButton.innerHTML = "Code";
     parentElement.appendChild(codeButton);
   }
   createTitle(parentElement, title) {
@@ -70,7 +72,7 @@ class App {
     createTitle.innerHTML = title;
     parentElement.appendChild(createTitle);
   }
-  createInfo(card, info) {
+  createInfo(parentElement, info) {
     let createInfo = document.createElement("p");
     createInfo.innerHTML = info;
     parentElement.appendChild(createInfo);
