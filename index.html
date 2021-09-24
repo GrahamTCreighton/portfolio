@@ -88,37 +88,56 @@
         <div class="header">
           <h2>Get in touch</h2>
         </div>
-        <form id="form" class="form">
+        <form
+          id="form"
+          class="form"
+          action="https://formsubmit.co/026adc806324fd6e237b0b993b0fed20"
+          method="POST"
+        >
           <div class="form-control">
-            <label for="username">Name</label>
-            <input type="text" placeholder="Graham Creighton" id="username" />
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Graham Creighton"
+              id="username"
+              required
+            />
           </div>
           <div class="form-control">
             <label for="username">Email</label>
             <input
               type="email"
+              name="email"
               placeholder="guitarrista.1988@hotmail.com"
               id="email"
+              required
             />
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
           </div>
           <div class="form-control">
             <label for="username">Message</label>
             <input
               type="text"
+              name="message"
               placeholder="Type your message here..."
               id="message"
+              required
             />
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
           </div>
-          <button>Submit</button>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://yourdomain.co/thanks.html"
+          />
+          <!--Here i link to a thankyou page :) Onclick take me to thankyou message-->
+          <input
+            type="hidden"
+            name="_subject"
+            value="You have a new message from your website! Good Luck!"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>
