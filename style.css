@@ -251,6 +251,7 @@ body {
   overflow: hidden;
   width: 800px;
   max-width: 100%;
+  transition: ease-in-out 1s;
 }
 .header {
   display: flex;
@@ -261,10 +262,12 @@ body {
   border-bottom: 1px solid #f0f0f0;
   background-color: #f7f7f7;
   padding: 20px 40px;
+  transition: ease-in-out 1s;
 }
 
 .header h2 {
   margin: 0;
+  transition: ease-in-out 1s;
 }
 .form {
   padding: 30px 40px;
@@ -274,6 +277,7 @@ body {
   margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
+  transition: ease-in-out 1s;
 }
 
 .form-control label {
@@ -281,6 +285,7 @@ body {
   font-weight: 500;
   display: inline-block;
   margin-bottom: 5px;
+  transition: ease-in-out 1s;
 }
 
 .form-control input {
@@ -291,19 +296,29 @@ body {
   font-size: 14px;
   padding: 10px;
   width: 100%;
+  transition: ease-in-out 1s;
+}
+.form-control textarea {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  resize: none;
+  transition: ease-in-out 1s;
 }
 
 .form-control input:focus {
   outline: 0;
   border-color: #777;
+  transition: ease-in-out 1s;
 }
-
-.form-control.success input {
-  border-color: #2ecc71;
-}
-
-.form-control.error input {
-  border-color: #e74c3c;
+.form-control textarea:focus {
+  outline: 0;
+  border-color: #777;
+  transition: ease-in-out 1s;
 }
 
 .form-control i {
@@ -311,28 +326,7 @@ body {
   position: absolute;
   top: 40px;
   right: 10px;
-}
-
-.form-control.success i.fa-check-circle {
-  color: #2ecc71;
-  visibility: visible;
-}
-
-.form-control.error i.fa-exclamation-circle {
-  color: #e74c3c;
-  visibility: visible;
-}
-
-.form-control small {
-  color: #e74c3c;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  visibility: hidden;
-}
-
-.form-control.error small {
-  visibility: visible;
+  transition: ease-in-out 1s;
 }
 
 .form button {
@@ -340,11 +334,11 @@ body {
   left: 17.2em;
   top: 25em;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  background-color: rgb(102, 156, 178);
+  font-weight: 500;
+  background-color: rgba(102, 157, 178, 0.493);
   border: 1px solid black;
   border-radius: 5px;
-  color: #fff;
+  color: black;
   display: block;
   font-size: 20px;
   padding: 10px;
@@ -353,9 +347,9 @@ body {
   transition: 1s ease-in-out;
 }
 .form button:hover {
-  color: #f1f1f1;
+  color: white;
   transform: scale(1.25);
-  background-color: #2ecc71;
+  background-color: rgb(102, 157, 178);
 }
 
 /*Bounce animation starts here*/
@@ -395,33 +389,130 @@ body {
 /*Dark mode starts here*/
 .dark-mode {
   background-image: url(images/darkbg.jpg);
-  color: white;
+  color: whitesmoke;
 }
-
+.dark-mode #sidebar {
+  background-color: rgba(24, 30, 46, 0.9);
+}
 .dark-mode #sidebar a {
-  color: white;
+  color: whitesmoke;
 }
 
 .dark-mode #sidebar #dmbutton {
-  color: white;
+  color: whitesmoke;
 }
 
 .dark-mode #socials a {
-  color: white;
+  color: whitesmoke;
 }
 
 .dark-mode .container {
-  background-color: rgba(102, 157, 178, 0.493);
+  background-color: rgba(24, 30, 46, 0.9);
 }
 
 .dark-mode .container .btn1 {
-  color: white;
+  color: whitesmoke;
   border: white solid 1px;
-  background-color: rgb(102, 156, 178);
+  background-color: rgba(24, 30, 46);
 }
 
 .dark-mode .container .btn2 {
   color: white;
   border: white solid 1px;
-  background-color: rgb(102, 156, 178);
+  background-color: rgba(24, 30, 46);
+}
+
+.dark-mode #formcontainer {
+  position: absolute;
+  left: 18em;
+  top: 10em;
+  height: 600px;
+  margin: 0;
+  background-color: rgba(24, 30, 46, 0.9);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 800px;
+  max-width: 100%;
+}
+.dark-mode .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+  background-color: rgba(48, 56, 67, 0.9);
+  padding: 20px 40px;
+  color: whitesmoke;
+}
+
+.dark-mode .form-control input {
+  border: 1px solid black;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(48, 56, 67, 0.9);
+  color: whitesmoke;
+}
+.dark-mode .form-control textarea {
+  border: 1px solid rgb(4, 23, 42);
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  resize: none;
+  background-color: rgba(48, 56, 67, 0.9);
+  color: whitesmoke;
+}
+
+.dark-mode .form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+.dark-mode .form-control input::placeholder {
+  color: rgb(102, 107, 115);
+}
+
+.dark-mode .form-control textarea:focus {
+  outline: 0;
+  border-color: #777;
+}
+.dark-mode .form-control textarea::placeholder {
+  color: rgb(102, 107, 115);
+}
+
+.dark-mode .form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.dark-mode .form button {
+  position: absolute;
+  left: 17.2em;
+  top: 25em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background-color: rgb(74, 86, 98);
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  color: whitesmoke;
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100px;
+  transition: 1s;
+}
+.dark-mode .form button:hover {
+  color: rgb(0, 51, 30);
+  transform: scale(1.25);
+  background-color: rgb(0, 255, 165);
 }
